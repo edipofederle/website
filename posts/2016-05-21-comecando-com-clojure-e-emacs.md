@@ -18,11 +18,11 @@ Antes de tudo vamos fazer uma lista do que você precisa instalar em seu computa
 
 Pense nisso como o software que roda os programas escritos em Clojure. Caso você esteja usando Linux ou OS X é provável que você já tenha isso instalado. Verifique usando o seguinte comando:
 
-   `which java`
+`which java`
 
 Se o comando anterior retornar algo como:
 
-   `/usr/bin/java`
+`/usr/bin/java`
 
 Então você já tem o que precisa para seguir. Se você ver algo como java not found você precisa instalar a JDK na sua máquina. Siga esse link para isso.
 
