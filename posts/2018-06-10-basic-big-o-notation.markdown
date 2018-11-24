@@ -2,8 +2,6 @@
 title: The minimum you need knows about Big O Notation
 tags: algorithms, complexity, big-o
 ---
-# The minimum you need knows about Big O Notation
-
 Big O notation is one of the topics that most of us scare at first look. Well, this is a complex topic, if we look deeper, and from the mathematical side. This is important too, but for us,  software developers/engineers, know the basics of this subject can be very useful, at least when I need to work with a huge quantity of data.
 
 This blog post aims to present the basics of this topic, in order to allow you to identify and correct choose the algorithms and data structures to resolve particular problems.
