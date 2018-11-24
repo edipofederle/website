@@ -50,7 +50,7 @@ Pois bem. Vou precisar capturar alguns dados noresponse:
 
 **wreq** usa o *package* **lens**, para várias coisas, inclusive isso, vamos importar
 
-```haskell
+```
 > import Control.Lens
 ```
 
@@ -76,7 +76,7 @@ Vamos colocar isso em um arquivo para ficar mais simples editar:
 `> touch tougg-client.hs`
 Adicionei apenas o `import`:
 
-```haskell
+```
 import Network.Wreq
 ```
 
