@@ -18,11 +18,16 @@ Antes de tudo vamos fazer uma lista do que você precisa instalar em seu computa
 
 Pense nisso como o software que roda os programas escritos em Clojure. Caso você esteja usando Linux ou OS X é provável que você já tenha isso instalado. Verifique usando o seguinte comando:
 
-`which java`
+```bash
+which java
+```
 
 Se o comando anterior retornar algo como:
 
-`/usr/bin/java`
+```bash
+/usr/bin/java
+```
+
 
 Então você já tem o que precisa para seguir. Se você ver algo como java not found você precisa instalar a JDK na sua máquina. Siga esse link para isso.
 
@@ -32,14 +37,14 @@ Você pode acessar a página do leinigen e ver as instruções de instalação p
 
 Agora com tudo configurado podemos ir adiante e criar nosso primeiro projeto Clojure. Para isso, em seu terminal, execute o seguinte comando:
 
-```
+```bash
 lein new hello-world
 cd hello-world
 ```
 
 O que o comando lein new hello-world faz é criar a estutura básica de um projeto clojure.
 
-```
+```bash
 .
 ├── LICENSE
 ├── README.md
@@ -87,7 +92,9 @@ A linha `5` é onde especificamos os argumentos que a função vai receber, ness
 
 Certo, entendi! Mas como faço para executar isso? Boa pergunta! Ainda lembra do **lein** certo? Agora vamos usar algo chamado **REPL**, que significa **READ**, **EVAL**, **PRINT**, **LOOP**. Vamos usar o **lein** para vermos na prática. No terminal:
 
-`lein repl`
+```bash
+lein repl
+```
 
 Após alguns segundos, você irá ver algo como:
 
@@ -106,7 +113,7 @@ user=>
 
 Pense no **REPL** como um prompt onde você pode interagir com a linguagem e também com seu programa. Está vendo esse `user=>` ? É o *namespace* chamado `user`. Você pode confirmar isso executando e seguinte no **REPL**:
 
-```
+```bash
 user=> *ns*
 #namespace[user]
 user=>
@@ -114,7 +121,7 @@ user=>
 
 Nossa função `foo` encontra-se em outro *namespace* precisamos usar o `require` agora:
 
-```
+```bash
 user=> (require 'hello-world.core)
 nil
 user=> (hello-world.core/foo "Jhon")
@@ -125,7 +132,9 @@ user=>
 
 Agora teste usar o seguinte comando:
 
-`user=> (doc map)`
+```bash
+user=> (doc map)
+```
 
 Agora você já sabe como olhar para a documentação de um função que esteja com dúvidas.
 
@@ -143,7 +152,7 @@ Agora você já sabe como olhar para a documentação de um função que esteja 
 
 Novamente, não vamos focar em detalhes, olhe para a linha `7`. Você pode ler essa linha como `0` É igual a `1`?. Vamos voltar para o terminal e novamente usar o **lein**, dessa vez para executar o(s) teste(s):
 
-```
+```bash
 ✝  ~/hello-world > lein test
 
 lein test hello-world.core-test
@@ -166,7 +175,7 @@ actual: (not (= 0 1))
 
 Por incrível que parece `0` não É igual a `1` :D. Você já sabe como fazer esse teste passar né? Abra o arquivo `test/hello_word/core_test.clj` modifique o teste de modo que ele passe e rode **lein** test novamente:
 
-```
+```bash
 ✘ ✝  ~/hello-world > lein test
 
 lein test hello-world.core-test
