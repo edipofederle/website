@@ -8,4 +8,5 @@ cp -R _site/*  ../edipofederle.github.io
 cd ../edipofederle.github.io
 git add .
 git commit -m "New version"
-git push -f
+git commit -m 'rebuild pages' --allow-empty
+git push origin master
