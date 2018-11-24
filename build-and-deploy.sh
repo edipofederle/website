@@ -1,5 +1,6 @@
 runhaskell site.hs clean
 runhaskell site.hs build
+stack exec site clean
 stack exec site rebuild
 git add .
 git commit -m "Rebuild"
