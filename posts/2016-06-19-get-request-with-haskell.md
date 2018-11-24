@@ -19,7 +19,7 @@ Vamos lá.
 
 Após um pequena busca no google, parece que o package wreq faz esse tipo de trabalho. Então acesso o terminal:
 
-```
+```haskell
 > cabal update
 > cabal install -j --disable-tests wreq
 ```
@@ -29,7 +29,7 @@ Após um pequena busca no google, parece que o package wreq faz esse tipo de tra
 
 Vamos fazer alguns testes direto no gchi
 
-```
+```haskell
 > import Network.Wreq
 > r <- get "http://httpbin.org/get"
 > ghci :type r
@@ -42,7 +42,7 @@ Pelo que parece literais `String` são sempre do tipo `String`. Algumas bibliote
 
 Para ativar a extensão:
 
-```
+```haskell
 > :set -XOverloadedStrings
 ```
 
@@ -50,20 +50,20 @@ Pois bem. Vou precisar capturar alguns dados noresponse:
 
 **wreq** usa o *package* **lens**, para várias coisas, inclusive isso, vamos importar
 
-```
+```haskell
 > import Control.Lens
 ```
 
 Agora podemos recuperar algumas informações, como ostatusdo response.
 
-```
+```haskell
 > r ^. responseStatus
 > Status {statusCode = 200, statusMessage = "OK"}
 ```
 
 Também podemos fazer composições, como por exemplo para pegar o `statusCode`:
 
-```
+```haskell
 > r ^. responseStatus . statusCode
 ```
 
@@ -76,13 +76,13 @@ Vamos colocar isso em um arquivo para ficar mais simples editar:
 `> touch tougg-client.hs`
 Adicionei apenas o `import`:
 
-```
+```haskell
 import Network.Wreq
 ```
 
 Salvei e:
 
-```
+```haskell
 > haskellrun tougg-client.hs
 
 tougg-client.hs:0:53: error:
@@ -92,7 +92,7 @@ tougg-client.hs:0:53: error:
 
 Motherfucker!! Então tentei isso:
 
-```
+```haskell
 import Network.Wreq
 
 main = do
@@ -110,7 +110,7 @@ Motherfucker!!! Ok, agora digitei errado mesmo, `putStrln` ao invés de `putStrL
 
 Vamos tentar denovo agora:
 
-```
+```haskell
 > runhaskell tougg-client.hs
 > hi
 ```
@@ -121,13 +121,13 @@ Agora vamos mudar para o *end-point* que comentei no lá começo do post. Esse *
 
 Logo preciso dar um jeito de passar esse token no header da requisição. `getWith` parece ser o que preciso aqui, e também header.
 
-```
+```haskell
 let opts = defaults & header "Authorization: Token token" .~ ["token_here"]
 ```
 
 parece que é algo assim faz o serviço. Vamos colocar isso no arquivo fonte:
 
-```
+```haskell
 {-# LANGUAGE OverloadedStrings #-}
 
 import Network.Wreq
@@ -141,14 +141,14 @@ main = do
 
 Quando estava no **ghci** foi usado: `set -XOverloadedStrings`para habilitar a extensão, quando em um arquivo fonte, precisamos usar como mostrado na linha `1`.
 
-```
+```haskell
 > runhaskell tougg-client.hs
 > Eu venci!
 ```
 
 YEAH!. Parece que tudo está funcionando ainda. Agora preciso fazer a requisição passando o `opts`, onde tem o `token`. Vamos usar o `getWith`, mencionado anteriormente:
 
-```
+```haskell
 {-# LANGUAGE OverloadedStrings #-}
 
 import Network.Wreq
@@ -165,7 +165,7 @@ main = do
 
 Vamos rodar.
 
-```
+```haskell
 > runhaskell tougg-client.hs
 
 > tougg-client.hs:12:13: error:
@@ -193,26 +193,26 @@ Agora preciso ler do prompt o ID do usuário que queremos.
 
 Parece que o que precisamos é um simples
 
-```
+```haskell
 idUser <- getLine
 ```
 
 Podemos usar `:t` para ver o tipo:
 
-```
+```haskell
 :t getLine
 getLine :: IO String
 ```
 
 Parece que faz sentido. Agora precisamos concatenar esse `idUser` na nossa URL. `++` faz isso. Vamos tentar isso:
 
-```
+```haskell
 r <-  getWith opts http://localhost:3000/api/users/" ++ idUser
 ```
 
 Rodando:
 
-```
+```haskell
 tougg-client.hs:12:9: error:
 	• Couldn't match expected type ‘[Char]’
 				  with actual type ‘IO
@@ -232,13 +232,13 @@ tougg-client.hs:12:9: error:
 
 Motherfucker!!!!. Não sei, denovo! Mas parece que isso resolve:
 
-```
+```haskell
 r <-  getWith opts ("http://localhost:3000/api/users/" ++ idUser)
 ```
 
 Rodando:
 
-```
+```haskell
 > runhaskell tougg-client.hs
   Informe o ID do usuário desejado
   6526
@@ -247,7 +247,7 @@ Rodando:
 
 Ótimo!. Na verdade preciso pegar o `body`. O *package* **lens** possui várias funções bem úteis para trabalhar com JSON. No `body` recebemos um JSON contendo algumas inforamações do usuário. A *keyuser*, retorna o e-mail do usuário. Para poder pegar essa informação alterei o código para isso:
 
-```
+```haskell
 {-# LANGUAGE OverloadedStrings #-}
 
 import Network.Wreq
