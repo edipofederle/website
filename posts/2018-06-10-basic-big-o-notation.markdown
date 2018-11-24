@@ -14,8 +14,6 @@ We are going to use Ruby programming language to show the code examples, but the
 
 The Big O notation is a fancy name used in Computer Science (CS) to describe the performance and/or complexity of an algorithm. Is important note that Big O always considers the worst-case scenario. It can be used to describe the execution time spent to execute a particular algorithm or the space used(memory or disk).
 
-## Find some title
-
 We cover the most commons groups of complexity:
 
 - Big O(1)     - Constant
