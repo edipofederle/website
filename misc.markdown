@@ -4,12 +4,15 @@ title: Miscellaneous
 
 # Trip notes
 
-- Deutschland (2015) - fun
-- Netherlands (2015) - fun
-- Czech Republic (2015) - fun
-- Czech Republic (2018) - fun/work
-- Hungary (2018) - fun/work
-- England (2018) - fun
-- Vienna (2018) - fun
-- Colombia (2018) - fun
-- Uruguai (2018) - fun/work
+## 2015
+- Deutschland - fun
+- Netherlands  - fun
+- Czech Republic  - fun
+
+## 2018
+- Czech Republic - fun/work
+- Hungary - fun/work
+- England - fun
+- Vienna - fun
+- Colombia - fun
+- Uruguai - fun/work
