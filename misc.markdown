@@ -40,7 +40,7 @@ title: Miscellaneous
   * Vienna - fun
 
 * Colombia - fun
-  * Bogtá
+  * Bogotá
   * Medellin
   * San Andres
   * Cartagena
