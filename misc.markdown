@@ -7,8 +7,18 @@ title: Miscellaneous
 
 ## 2015
 - Deutschland - fun
+* Berlin
+* Munich
+* Nuremberg
+* Fussen
+* Dachau
+* Clogne
+
 - Netherlands  - fun
+* Amesterdan
+
 - Czech Republic  - fun
+* Prague
 
 ## 2018
 - Czech Republic - fun/work
