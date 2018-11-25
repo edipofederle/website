@@ -6,24 +6,46 @@ title: Miscellaneous
 # Trip notes
 
 ## 2015
-- Deutschland - fun
-* Berlin
-* Munich
-* Nuremberg
-* Fussen
-* Dachau
-* Clogne
+* Deutschland - fun
+  * Berlin
+  * Munich
+  * Nuremberg
+  * Fussen
+  * Dachau
+  * Clogne
 
-- Netherlands  - fun
-* Amesterdan
+* Netherlands - fun
+  * Amsterdam
 
-- Czech Republic  - fun
-* Prague
+* Czech Republic - fun
+  * Prague
 
 ## 2018
-- Czech Republic - fun/work
-- Hungary - fun/work
-- England - fun
-- Vienna - fun
-- Colombia - fun
-- Uruguai - fun/work
+
+* Portugal - fun/work
+  * Lisbon
+
+* Czech Republic - fun/work
+  * Prague
+  * Czech krumlov
+  * Karlštejn
+
+* Hungary - fun/work
+  * Budapest
+
+* England - fun
+  * London
+
+* Austria
+  * Vienna - fun
+
+* Colombia - fun
+  * Bogtá
+  * Medellin
+  * San Andres
+  * Cartagena
+
+* Uruguai - fun/work
+  * Montevideo
+  * Cabo Polonio
+  * Colonia
