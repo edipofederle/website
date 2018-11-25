@@ -2,6 +2,7 @@
 title: Miscellaneous
 ---
 
+<hr/>
 # Trip notes
 
 ## 2015
