@@ -7,7 +7,7 @@ tags: lisp, common lisp, macosx
 Hey,
 
 Recently I start to read the [Practical Common Lisp book](http://www.gigamonkeys.com/book/), so the first this that I did, after reading the introduction
-was trying to install the SBLC in order to run the example and play with the code.
+was trying to install the SBCL in order to run the examples and play with the code.
 
 On OSX, I was thinking it should be trivial as:
 
@@ -15,7 +15,7 @@ On OSX, I was thinking it should be trivial as:
 brew install sblc
 ```
 
-well, it works well, the only bad thing about this is that the pre-compiled version of SBLC for OSX doesn't come with
+well, it works well, the only bad thing about this is that the pre-compiled version of  for OSX doesn't come with
 threads support enabled, this is because it is an experimental feature in SBCL so in order to make it work on OSX you
 need to compile using some flags:
 
