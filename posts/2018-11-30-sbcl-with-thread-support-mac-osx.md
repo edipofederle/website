@@ -32,7 +32,7 @@ sudo sh make.sh --fancy --with-sb-thread
 sudo sh install.sh
 ```
 
-It could take some time to finish. To check access the REPL with `scbl`
+It could take some time to finish. To check access the REPL with `SBCL`
 
 ```lisp
 
