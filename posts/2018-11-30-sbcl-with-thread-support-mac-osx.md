@@ -6,7 +6,7 @@ tags: lisp, common lisp, macosx
 
 Hey,
 
-Recently I start to read the Practical Common Lisp book, so the first this that I did, after reading the introduction
+Recently I start to read the [Practical Common Lisp book](http://www.gigamonkeys.com/book/), so the first this that I did, after reading the introduction
 was trying to install the SBLC in order to run the example and play with the code.
 
 On OSX, I was thinking it should be trivial as:
