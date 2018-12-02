@@ -23,7 +23,7 @@ In the rest of this post, lets see the most commonly used kinds of atoms, they a
 - strings, and
 - names
 
-# Numebers
+# Numbers
 
 Numebrs are straightfoward, so, any sequecence of digits, can include the sign `+` or `-`, the decimal point (`.`) or the [solidus](https://en.wikipedia.org/wiki/Slash_(punctuation)) (`/`), examples:
 
