@@ -4,9 +4,7 @@ date: 2018-12-09T20:39:33
 tags: common lisp, lisp
 ---
 
-In order to perform any computation, we need to be enabled to evaluate the code. Once the reader translates the text into s-expressions, they are ready to be evaluated as Lisp code.
-
-**note:** some s-expressions are not evaluated as Lisp code. The reader contains a second level of syntax that determines which s-expressions will be evaluated as Lisp forms.
+In order to perform any computation, we need to be enabled to evaluate the code. Once the reader translates the text into s-expressions, they are ready to be evaluated as Lisp code. Some s-expressions are not evaluated as Lisp code. The reader contains a second level of syntax that determines which s-expressions will be evaluated as Lisp forms.
 
 The syntactic rules are: any atoms, any non-list or the empty list is a valid Lisp form, also any list that has a symbol its first element. You can think about the evaluator as a function that takes as an argument a syntactically and well-formated Lisp form and as a result, return a value.
 
