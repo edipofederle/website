@@ -60,7 +60,7 @@ comp(add_one, multi_three).call(11) # 34
 
 If we need to receive 4 functions, we will need to do something like:
 
-```
+```ruby
 def comp(f1, f2, f3, f4)
   lambda { |x| f1.call(f2.call(f3.call(f4.call(x)))) }
 end
@@ -79,7 +79,7 @@ If you look at Clojure `comp` [function implemtation](https://github.com/clojure
 So, basically, the idea here is to use lambda and pass it to a `comp`
 function. Let's try to change it to be possible to use any number of functions. This is a case to use the `splat` operator (*), so let's rewrite the function `comp` using it:
 
-```
+```ruby
 def compose(*fns)
   lambda { |x| f1.call(f2.call(x)) }
 end
