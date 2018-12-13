@@ -66,7 +66,8 @@ def comp(f1, f2, f3, f4)
 end
 ```
 
-And so on, this looks like a good case for use a `reduce` function, let's try it:
+This looks like a good case for use a `reduce` function. Let's try to change it to be possible to use any number of functions. This is a case to use the `splat` operator (*), so let's rewrite the function `comp` using it:
+
 
 ```ruby
 def comp(*fns)
@@ -74,16 +75,11 @@ def comp(*fns)
 end
 ```
 
-If you look at Clojure `comp` [function implemtation](https://github.com/clojure/clojure/blob/clojure-1.9.0/src/clj/clojure/core.clj#L2549), you will see that it also use some reduce stuff to do the job.
+If you look at Clojure `comp` [function implementation](https://github.com/clojure/clojure/blob/clojure-1.9.0/src/clj/clojure/core.clj#L2549), you will see that it also use some reduce stuff to do the job.
 
-So, basically, the idea here is to use lambda and pass it to a `comp`
-function. Let's try to change it to be possible to use any number of functions. This is a case to use the `splat` operator (*), so let's rewrite the function `comp` using it:
 
-```ruby
-def compose(*fns)
-  lambda { |x| f1.call(f2.call(x)) }
-end
-```
+So, now we can use the new version of `comp` function and pass any number of functions to it.
+
 
 ## References
 
