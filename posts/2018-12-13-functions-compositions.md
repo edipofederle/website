@@ -87,5 +87,5 @@ end
 
 ## References
 
-- https://www.joinhandshake.com/engineering/2016/01/22/functional-aspects-of-ruby.html
-- https://github.com/clojure/clojure/blob/clojure-1.9.0/src/clj/clojure/core.clj#L2549
+- [https://www.joinhandshake.com/engineering/2016/01/22/functional-aspects-of-ruby.html](https://www.joinhandshake.com/engineering/2016/01/22/functional-aspects-of-ruby.html)
+- [https://github.com/clojure/clojure/blob/clojure-1.9.0/src/clj/clojure/core.clj#L2549](https://github.com/clojure/clojure/blob/clojure-1.9.0/src/clj/clojure/core.clj#L2549)
