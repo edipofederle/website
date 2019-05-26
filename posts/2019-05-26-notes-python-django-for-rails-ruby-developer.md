@@ -20,26 +20,25 @@ So, recently I starting working with Python/Django, come from a Ruby/Rails backg
     Inform the path from where the method is called. In this case, the method `foo_bar` is used inside the `my_app` helper.
 
 
-```
+```python
 @mock.patch('my_app.helpers.foo_bar', return_value=10)
 ```
 
 
 If is a object related method, use:
-
-```
+python
 mock.patch.object(Object, 'foo_bar')
 ```
 
 You can also use `return_value` if you need
 
-```
+```python
  mock.return_value = some_thing
 ```
 
 
 - Refresh object from DB
 
-```
+```python
 obj.refresh_from_db()
 ```
