@@ -49,3 +49,24 @@ title: Miscellaneous
   * Montevideo
   * Cabo Polonio
   * Colonia
+
+## 2019
+* Czech Republic - fun
+  * Prague
+* Poland
+  * Krakow
+  * Warsaw
+* Romenia
+  * Bucharest
+* Norway
+  * Oslo
+
+* Argentina
+  * Buenos Aires
+
+* Bolivia
+  * Sucre
+  * La Paz
+  * Potosi
+  * Casablanca
+  * Santa cruz de la sierra
